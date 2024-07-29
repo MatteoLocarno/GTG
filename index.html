@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQdDvv7ZCt+2IMq6mS11sZ27rPU1dBvuR8Aph7FPX5F9xM3U2z4J1Es5/jUmeayHpM/lPz1Ij1Y7SExqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>GUESS THE GRID</h1>
+        <div class="auth-buttons">
+            <button id="login-button" class="btn">Login</button>
+            <button id="register-button" class="btn">Register</button>
+            <div id="user-info" style="display: none;">
+                <span id="user-icon"><i class="fas fa-user"></i></span>
+                <span id="user-name"></span>
+                <span id="logout">| Logout</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="grid" class="grid-container"></div>
+        
+        <!-- Sostituito il vecchio bottone con il nuovo bottone -->
+        <button>
+            P L A Y
+            <div id="clip">
+                <div id="leftTop" class="corner"></div>
+                <div id="rightBottom" class="corner"></div>
+                <div id="rightTop" class="corner"></div>
+                <div id="leftBottom" class="corner"></div>
+            </div>
+            <span id="rightArrow" class="arrow"></span>
+            <span id="leftArrow" class="arrow"></span>
+        </button>
+
+        <div id="confirmation-message" class="confirmation-message"></div>
+    </main>
+
+    <!-- Modali -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-login">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-register">&times;</span>
+            <h2>Register</h2>
+            <div id="register-error" class="error-message"></div>
+            <form id="register-form">
+                <label for="register-name">Nome:</label>
+                <input type="text" id="register-name" required>
+                <label for="register-surname">Cognome:</label>
+                <input type="text" id="register-surname" required>
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" required>
+                <label for="register-dob">Data di Nascita:</label>
+                <input type="date" id="register-dob" required>
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" pattern="^(?=.*[0-9]).{8,}$" required title="La password deve essere di almeno 8 caratteri e contenere almeno un numero">
+                <div class="password-hint">La password deve essere di almeno 8 caratteri e contenere almeno un numero.</div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

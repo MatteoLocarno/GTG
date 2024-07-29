@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "name": "Matteo",
+      "surname": "Locarno",
+      "email": "asss@gmail.com",
+      "birthdate": "2024-07-01",
+      "password": "er"
+    },
+    {
+      "id": "57266427",
+      "name": "Matteo",
+      "surname": "Locarno",
+      "email": "prova@gmail.com",
+      "birthdate": "2024-07-01",
+      "password": "abcdefg",
+      "selections": [
+        "Max Verstappen",
+        "Charles Leclerc",
+        "Carlos Sainz",
+        "Lewis Hamilton",
+        "Nico Hulkenberg",
+        "Zhou Guanyu",
+        "Fernando Alonso",
+        "Lando Norris",
+        "Oscar Piastri",
+        "Lance Stroll",
+        "Esteban Ocon",
+        "Pierre Gasly",
+        "Yuki Tsunoda",
+        "Kevin Magnussen",
+        "Valtteri Bottas",
+        "Alexander Albon",
+        "Logan Sargeant",
+        "Nyck de Vries",
+        "George Russell",
+        "Sergio Perez"
+      ]
+    },
+    {
+      "id": "64999224",
+      "name": "Matteo",
+      "surname": "Locarno",
+      "email": "assss@gmail.com",
+      "birthdate": "2024-07-01",
+      "password": "abcdefghilmno1"
+    },
+    {
+      "id": "90222143",
+      "name": "Matteo",
+      "surname": "Locarno",
+      "email": "troia@gmail.com",
+      "birthdate": "2024-07-01",
+      "password": "342432432432",
+      "selections": []
+    }
+  ]
+}
